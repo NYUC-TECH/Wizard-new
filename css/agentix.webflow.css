@@ -2265,8 +2265,8 @@ blockquote {
 .brands-image-wrapper {
   justify-content: center;
   align-items: center;
-  min-width: 120px;
-  max-width: 120px;
+  min-width: 160px;
+  max-width: 160px;
   display: flex;
 }
 
@@ -3389,7 +3389,7 @@ blockquote {
 .brands-flex-wrapper {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
-  opacity: .3;
+  opacity: .6;
   justify-content: flex-end;
   align-items: flex-start;
   width: 100%;
