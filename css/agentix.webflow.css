@@ -2546,7 +2546,6 @@ blockquote {
 /* Responsive Design */
 @media (max-width: 768px) {
   .cards-container {
-    padding-left: 35px;
     width: 90%;
     flex-direction: row;
     flex-wrap: wrap;
