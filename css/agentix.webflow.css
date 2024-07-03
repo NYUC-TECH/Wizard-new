@@ -3972,6 +3972,7 @@ blockquote {
 }
 
 .footer-block {
+  margin-top: -50px;
   grid-column-gap: 8px;
   grid-row-gap: 8px;
   flex-flow: column;
