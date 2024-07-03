@@ -1900,7 +1900,7 @@ blockquote {
 }
 
 .au-font{
-  font-size: 38px;
+  font-size: 20px;
   line-height: 1;
   text-transform: none !important;
 }
@@ -3147,7 +3147,7 @@ blockquote {
   max-width: 480px;
   min-height: 232px;
   max-height: 232px;
-  padding: 48px 36px;
+  padding: 55px 36px;
   display: flex;
 }
 
@@ -3594,7 +3594,7 @@ blockquote {
 }
 
 .au-img{
-  width: 80%;
+  width: 60%;
   height: 100%;
   object-fit: cover;
 }
