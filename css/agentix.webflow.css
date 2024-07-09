@@ -2791,7 +2791,7 @@ blockquote {
 
 .outline-white {
   color: var(--transparent);
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: var(--white);
 }
 
