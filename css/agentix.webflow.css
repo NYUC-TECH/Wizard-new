@@ -5405,13 +5405,13 @@ blockquote {
 }
 
 
-/* Reset some default styling */
+/* Aboutus */
 body, h3 {
   margin: 0;
   padding: 0;
 }
 
-/* Styling the sliding-section and centering content */
+
 .sliding-section {
   display: flex;
   justify-content: center;
@@ -5421,7 +5421,7 @@ body, h3 {
   width: 100%;
 }
 
-/* Container for the sliding headings */
+
 .slide-container {
   display: flex;
   flex-direction: column;
@@ -5431,26 +5431,26 @@ body, h3 {
   overflow: hidden;
 }
 
-/* Individual heading styles */
+
 .heading {
   text-align: center;
   font-size: 25px;
   font-weight: 150;
-  color: black; /* Set heading color to black */
-  opacity: 0; /* Start hidden */
-  transform: translateX(-100%); /* Start offscreen left */
-  animation: slideIn 1s forwards; /* Slide in animation */
+  color: black; 
+  opacity: 0; 
+  transform: translateX(-100%);
+  animation: slideIn 1s forwards;
 }
 
-/* Define the sliding animation */
+
 @keyframes slideIn {
   to {
       opacity: 1;
-      transform: translateX(0); /* Move to center */
+      transform: translateX(0);
   }
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
   .heading {
       font-size: 1.5rem;
@@ -5466,5 +5466,105 @@ body, h3 {
   }
   .sliding-section{
     height: 300px;
+  }
+}
+
+/* services */
+
+.box-section {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: -30px auto;
+  max-width: 1300px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.box-section .content {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+
+.box-section h3 {
+  color: #333;
+  font-size: 30px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.box-section p {
+  color: #000000;
+  font-size: 18px;
+  line-height: 1.5;
+  overflow: hidden;
+  max-height: 3em;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.box-section p.expanded {
+  max-height: none;
+}
+
+.read-more {
+  display: inline-block;
+  color: #007bff;
+  cursor: pointer;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+  border: 1px solid var(--primary);
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.box-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.box-section th, .box-section td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+  color: black;
+}
+
+.box-section tbody tr:nth-child(odd) {
+  background-color: white;
+}
+
+.box-section tbody tr:nth-child(even) {
+  background-color: var(--primary);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .box-section th, .box-section td {
+    padding: 8px;
+    font-size: 14px;
+  }
+  .box-section h3 {
+    font-size: 1.3em;
+  }
+  .box-section p {
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 576px) {
+  .box-section th, .box-section td {
+    padding: 6px;
+    font-size: 12px;
   }
 }
