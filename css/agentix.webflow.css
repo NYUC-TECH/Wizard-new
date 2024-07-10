@@ -942,6 +942,13 @@
   display: block;
 }
 
+.centrize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .w-commerce-commercecheckouterrorstate {
   background-color: #ffdede;
   margin-top: 16px;
@@ -1345,6 +1352,10 @@ blockquote {
 
 .section {
   width: 100%;
+}
+.section1 {
+  width: 100%;
+  background-color:var(--primary);
 }
 
 .section.relative {
@@ -5394,3 +5405,66 @@ blockquote {
 }
 
 
+/* Reset some default styling */
+body, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling the sliding-section and centering content */
+.sliding-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 460px;
+  background-color:var(--light-grey);
+  width: 100%;
+}
+
+/* Container for the sliding headings */
+.slide-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Individual heading styles */
+.heading {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 150;
+  color: black; /* Set heading color to black */
+  opacity: 0; /* Start hidden */
+  transform: translateX(-100%); /* Start offscreen left */
+  animation: slideIn 1s forwards; /* Slide in animation */
+}
+
+/* Define the sliding animation */
+@keyframes slideIn {
+  to {
+      opacity: 1;
+      transform: translateX(0); /* Move to center */
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .heading {
+      font-size: 1.5rem;
+  }
+  .sliding-section{
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+      font-size: 1.2rem;
+  }
+  .sliding-section{
+    height: 300px;
+  }
+}
