@@ -1323,9 +1323,9 @@ form {
 
 label {
   color: var(--light-grey);
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-family: Archivo, sans-serif;
-  font-size: 13px;
+  font-size: 25px;
   font-weight: 300;
   display: block;
 }
@@ -1612,7 +1612,7 @@ blockquote {
 }
 
 .dropdown-toggle {
-  text-align: left;
+  text-align: center;
   cursor: pointer;
   min-width: 100%;
   margin-left: auto;
