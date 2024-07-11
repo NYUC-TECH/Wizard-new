@@ -1209,6 +1209,7 @@ h1 {
 }
 
 h2 {
+
   color: var(--white);
   letter-spacing: -1px;
   text-transform: capitalize;
@@ -1330,9 +1331,9 @@ form {
 
 label {
   color: var(--light-grey);
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-family: Archivo, sans-serif;
-  font-size: 25px;
+  font-size: 13px;
   font-weight: 300;
   display: block;
 }
@@ -1609,7 +1610,7 @@ blockquote {
 }
 
 .image-parallax-curve {
-  min-width: 100%;
+  min-width: 150%;
 }
 
 .faq-dropdown {
@@ -4482,7 +4483,10 @@ blockquote {
 @media screen and (max-width: 767px) {
   h2 {
     font-size: 48px;
-  }
+    margin-left: 15px;
+    margin-right: 15px;
+    }
+ 
 
   h3 {
     font-size: 36px;
@@ -4886,7 +4890,10 @@ blockquote {
   h2, h3 {
     font-size: 32px;
     line-height: 32px;
-  }
+    margin-left: 15px;
+    margin-right: 15px;
+    }
+  
 
   h5 {
     line-height: 18px;
@@ -5546,6 +5553,8 @@ body, h3 {
   font-size: 30px;
   line-height: 1;
   margin-bottom: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .box-section-design h2 {
@@ -5564,6 +5573,8 @@ body, h3 {
   max-height: 3em;
   position: relative;
   margin-bottom: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .box-section-design p.expanded {
@@ -5603,13 +5614,13 @@ body, h3 {
 }
 
 .list-bg1 {
-  background-color: var(--primary);
+  background-color: var(--light-grey);
   border: 1px solid #000;
 }
 
 .list-bg2 {
   background-color: var(--light-grey);
-  border: 0px solid #000;
+  border: 1px solid #000;
 }
 
 .list {
@@ -5663,6 +5674,7 @@ body, h3 {
   margin-top: 10px;
   text-align: center;
   border: 1px solid var(--primary);
+  margin-left: 15px;
 }
 
 .read-more:hover {
