@@ -45,7 +45,7 @@
   padding-right: 6px;
   font-size: 11px;
   font-weight: 700;
-  line-height: 18px;
+  line-height: 40px;
   display: inline-block;
 }
 
@@ -193,7 +193,7 @@
   height: 38px;
   margin-bottom: 10px;
   padding: 8px 6px 8px 12px;
-  line-height: 20px;
+  line-height: 40px;
   display: block;
 }
 
@@ -1192,7 +1192,7 @@ body {
   color: var(--white);
   font-family: Archivo, sans-serif;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 40px;
 }
 
 h1 {
@@ -1315,10 +1315,17 @@ img {
   object-fit: cover;
   max-width: 100%;
   display: inline-block;
+  margin-right: 5px;
 }
 
 form {
   width: 100%;
+}
+
+.font-size-wu{
+  font-size: 17px !important;
+    font-weight: 300 !important;
+    line-height: 20px !important;
 }
 
 label {
@@ -2324,12 +2331,13 @@ blockquote {
   color: var(--black);
   position: relative;
   top: 1px;
+  left: 10px;
 }
 
 .animate-h5.move-down {
   position: absolute;
   top: 100%;
-  left: -1px;
+  left: 10px;
 }
 
 .footer-link.w--current {
@@ -3322,6 +3330,8 @@ blockquote {
   align-items: flex-start;
   width: 100%;
   display: flex;
+  padding-left: 100px;
+    padding-right: 100px;
 }
 
 .vision-text {
@@ -3703,7 +3713,8 @@ blockquote {
 
 
 .au-img{
-  width: 60%;
+  width: 50%;
+  padding-top: 60px;
   height: 100%;
   object-fit: cover;
 }
@@ -3767,7 +3778,7 @@ blockquote {
   text-transform: none;
   max-width: 960px;
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 500;
   line-height: 40px;
 }
 
