@@ -359,7 +359,7 @@ Line 1621:45 Unexpected "{"
     text-decoration: none;
     width: 100%;
     max-width: 100%;
-    height: 290px;
+    height: auto;
   }
   
   .product_wrap .product_grid_wrap:hover {
@@ -382,7 +382,7 @@ Line 1621:45 Unexpected "{"
     height: 100%;
     object-fit: contain;
     margin-bottom: 24px;
-    border-radius: 34px;
+    border-radius: 30px;
   
   }
   .collection_main_section .filter_content .product_wrap .product_grid_wrap .product_img > img {
