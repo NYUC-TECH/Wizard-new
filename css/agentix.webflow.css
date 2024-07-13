@@ -5778,3 +5778,86 @@ body, h3 {
     height: 16px;
   }
 }
+
+
+/* blogs */
+.headingg{
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  text-align: center;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.blog-selection {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .blog-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .blog-grid {
+      grid-template-columns: 1fr;
+  }
+}
+
+.blog-card {
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.blog-card:hover{
+  transform: translateY(-10px);
+}
+
+.blog-card img {
+  width: 100%;
+  height: auto;
+}
+
+.blog-info {
+  padding: 10px;
+}
+
+.blog-date {
+  margin: 15px;
+  color: #888;
+  font-size: 14px;
+}
+
+.blog-title {
+  margin:15px;
+  font-size: 25px;
+  text-transform: none;
+  line-height: 20px;
+
+}
+
+.blog-title a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.blog-title a:hover {
+  color: #7091E6;
+}
