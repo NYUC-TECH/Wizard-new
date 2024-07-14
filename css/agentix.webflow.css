@@ -1316,7 +1316,6 @@ img {
   object-fit: cover;
   max-width: 100%;
   display: inline-block;
-  margin-right: 5px;
 }
 
 form {
@@ -1868,7 +1867,7 @@ blockquote {
 }
 
 .color-wrapper.border {
-  border: 1px solid var(--light-grey);
+  border: 1px solid var(--black);
 }
 
 .fill {
@@ -5509,7 +5508,7 @@ body, h3 {
   z-index: 1;
 }
 
-.box-section .content {
+.box-section .contnt {
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #ccc;
@@ -5541,7 +5540,7 @@ body, h3 {
   margin-right: auto;
 }
 
-.box-section-design .content {
+.box-section-design .content-ser {
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #ccc;
@@ -5561,7 +5560,7 @@ body, h3 {
   color: #000000;
   font-size: 54px;
   font-weight: 600;
-  line-height: 64px;
+  line-height: 25px;
   margin-bottom: 10px;
 }
 
@@ -5689,7 +5688,7 @@ body, h3 {
 
 .border{
   margin-bottom: 20px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #000000;
 }
 
 .box-section th, .box-section td {
@@ -5803,7 +5802,6 @@ body, h3 {
   gap: 20px;
 }
 
-/* Responsive adjustments */
 @media (max-width: 900px) {
   .blog-grid {
       grid-template-columns: repeat(2, 1fr);
@@ -5988,16 +5986,16 @@ margin-left: auto;
 .gallery-item {
   position: relative;
   width: 100%;
-  padding-bottom: 100%; /* 1:1 Aspect Ratio */
+  padding-bottom: 100%;
   background-color: white;
   border: 1px solid #ddd;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  overflow: hidden; /* Ensure image does not overflow */
+  overflow: hidden;
 }
 
 .gallery-item:hover img {
-  transform: scale(1.1); /* Scale up slightly */
+  transform: scale(1.1);
 }
 
 .gallery-item img {
@@ -6008,11 +6006,10 @@ margin-left: auto;
   height: 100%;
   object-fit: cover;
   border-radius: 5px;
-  transition: transform 0.3s ease; /* Smooth transition */
-  transform-origin: center center; /* Scale from the center */
+  transition: transform 0.3s ease; 
+  transform-origin: center center; 
 }
 
-/* Popup Container */
 .popup {
   display: none;
   position: fixed;
@@ -6050,7 +6047,6 @@ margin-left: auto;
   cursor: pointer;
 }
 
-/* Responsive adjustments */
 @media (max-width: 1200px) {
   .gallery {
       grid-template-columns: repeat(3, 1fr);
