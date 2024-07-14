@@ -3376,7 +3376,6 @@ blockquote {
 
 .awards-wrapper {
   grid-column-gap: 32px;
-  grid-row-gap: 32px;
   text-align: center;
   flex-direction: column;
   justify-content: flex-start;
