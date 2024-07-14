@@ -5688,7 +5688,7 @@ body, h3 {
 }
 
 .border{
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   border-bottom: 1px solid #ccc;
 }
 
@@ -5860,4 +5860,109 @@ body, h3 {
 
 .blog-title a:hover {
   color: #7091E6;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.content {
+  display: flex;
+  flex: 1;
+  flex-direction: column-reverse;
+}
+.sidebar {
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.sidebar a {
+  color: black;
+}
+
+.sidebar img {
+border-radius: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.sidebar .blog-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.sidebar .text-content {
+  margin-left: 0px;
+  line-height: 2;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-content img {
+  width: 100%;
+  height: auto;
+}
+
+.main-content h5 {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  text-transform: none;
+  padding-bottom: 20px;
+}
+
+.date {
+  font-size: 0.9em;
+  color: #888;
+}
+
+.heding {
+ color: black;
+  font-size: 2em;
+  margin: 10px 0;
+}
+
+.paragraph {
+  color: black;
+  font-size: 17px;
+  margin: 10px 0;
+  padding-bottom: 30px;
+}
+
+.main-image-container {
+width: 100%;
+height: auto;
+overflow: hidden;
+border-radius: 30px;
+}
+
+.main-image{
+display: block;
+width: 100%;
+height: auto;
+border-radius: 30px;
+transition: transform 0.3s ease-in-out;
+overflow: hidden;
+}
+
+.main-image:hover{
+transform: scale(1.03);
+}
+
+@media(min-width: 768px) {
+  .content {
+      flex-direction: row;
+  }
+  .sidebar {
+      width: 25%;
+  }
+  .main-content {
+      width: 75%;
+  }
 }
