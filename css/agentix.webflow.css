@@ -1973,6 +1973,7 @@ blockquote {
   margin-right: auto;
   position: relative;
   overflow: hidden;
+  padding-bottom: 35px;
 }
 
 .badge {
@@ -5953,7 +5954,7 @@ border-radius: 10px;
 
 .main-image-container {
 width: 100%;
-height: auto;
+height: 480px;
 overflow: hidden;
 border-radius: 30px;
 }
