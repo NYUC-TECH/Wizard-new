@@ -3587,8 +3587,8 @@ blockquote {
   background-color: var(--transparent);
   border-radius: 24px;
   flex-direction: column;
-  justify-content: center;
-  min-width: 560px;
+  justify-content:flex-start;
+  min-width: 500px;
   max-width: 560px;
   min-height: 560px;
   max-height: 560px;
@@ -6218,4 +6218,8 @@ margin-left: auto;
 
 .video-parallax{
   width:100%;
+}
+
+.field-wrapper{
+  line-height: 20px;
 }
