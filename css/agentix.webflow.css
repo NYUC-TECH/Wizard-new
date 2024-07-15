@@ -2008,7 +2008,7 @@ blockquote {
   justify-content: flex-start;
   align-items: flex-start;
   width: 50%;
-  height: 720px;
+  height: 515px;
   padding: 32px;
   display: flex;
 }
@@ -2018,7 +2018,7 @@ blockquote {
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  height: 720px;
+  height: 515px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -2325,6 +2325,7 @@ blockquote {
   display: flex;
   position: relative;
   overflow: hidden;
+  margin-left: -25px;
 }
 
 .animate-h5 {
@@ -3078,7 +3079,7 @@ blockquote {
 }
 
 .image-wrapper-parallax {
-  border-radius: 100px;
+  border-radius: 20px;
   min-height: 540px;
   max-height: 540px;
   position: relative;
@@ -3447,13 +3448,15 @@ blockquote {
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 870px;
-  max-height: 870px;
+  min-height: 625px;
+  max-height: 625px;
   display: flex;
   position: absolute;
   top: 0;
   left: 0;
 }
+
+
 
 .hero-wrapper {
   grid-column-gap: 16px;
@@ -3463,7 +3466,7 @@ blockquote {
   justify-content: center;
   align-items: flex-start;
   max-width: 932px;
-  height: 640px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -5213,8 +5216,8 @@ blockquote {
   }
 
   .hero-image {
-    min-height: 120svh;
-    max-height: 120svh;
+    min-height: 253px;
+    max-height: 253px;
   }
 
   .hero-wrapper {
@@ -5223,7 +5226,7 @@ blockquote {
     justify-content: flex-start;
     align-items: flex-start;
     max-width: 240px;
-    height: 480px;
+    height: 140px;
     padding-top: 64px;
   }
 
@@ -6202,3 +6205,7 @@ margin-left: auto;
           width: 80px;
         }
       }
+
+.video-parallax{
+  width:100%;
+}
