@@ -5562,13 +5562,13 @@ body, h3 {
   color: #000000;
   font-size: 54px;
   font-weight: 600;
-  line-height: 25px;
+  line-height: 60px;
   margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 767px) {
   .box-section-design h2 {
-    line-height: 45px;
+    line-height: 55px;
   }
 }
 
