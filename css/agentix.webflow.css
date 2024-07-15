@@ -5900,8 +5900,8 @@ body, h3 {
 
 .sidebar img {
 border-radius: 10px;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 85px;
 }
 
 .sidebar .blog-item {
@@ -5910,7 +5910,7 @@ border-radius: 10px;
 }
 
 .sidebar .text-content {
-  margin-left: 0px;
+  margin-left: 10px;
   line-height: 2;
 }
 
@@ -5919,7 +5919,6 @@ border-radius: 10px;
   padding: 20px;
   position: relative;
   overflow: hidden;
-  text-align: justify;
 }
 
 .main-content img {
