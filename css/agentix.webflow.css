@@ -5927,6 +5927,7 @@ border-radius: 10px;
 }
 
 .main-content h5 {
+  letter-spacing: 0px;
   font-size: 20px;
   font-weight: bold;
   color: black;
