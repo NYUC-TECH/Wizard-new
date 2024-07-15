@@ -1609,7 +1609,7 @@ blockquote {
 }
 
 .image-parallax-curve {
-  min-width: 150%;
+  min-width: 100%;
 }
 
 .faq-dropdown {
@@ -1969,8 +1969,6 @@ blockquote {
 
 .image-wrapper {
   border-radius: 24px;
-  min-height: 540px;
-  max-height: 540px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
