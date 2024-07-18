@@ -233,59 +233,7 @@
     </div>
 
 
-    <main id="Maincontent-ser" class="content-ser-for-layout focus-none" role="main">
-      <!-- Your existing HTML content here -->
-  
-      <!-- Modal HTML -->
-      <div id="downloadCatalogModal" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <img src="../images/logo-black-2.png" alt="Logo" style="width: 150px; align-self: center;">
-          <h2 style="color: #610C9F; font-size: 30px; line-height: 45px;">DOWNLOAD CATALOGUE</h2>
-          <form id="catalogueForm">
-            <input type="text" id="name" name="name" placeholder="Your Name.." required>
-            <input type="text" id="number" name="number" placeholder="Your Number.." required>
-            <input type="email" id="email" name="email" placeholder="Your Email.." required>
-            <button style="width: 100%; background-color: #610C9F; color: white;" type="submit">SUBMIT</button>
-          </form>
-          <a id="catalogLink" href="#" style="display: none;">SUBMIT</a>
-        </div>
-      </div>
-    </main>
-  
-    <script>
-      // Get the modal
-      var modal = document.getElementById("downloadCatalogModal");
-  
-      // Get the <span> element that closes the modal
-      var span = document.getElementsByClassName("close")[0];
-  
-      // Show the modal when the page loads
-      window.onload = function() {
-        modal.style.display = "block";
-      }
-  
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function() {
-        modal.style.display = "none";
-      }
-  
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      }
-  
-      // Handle form submission
-      document.getElementById("catalogueForm").onsubmit = function(event) {
-        event.preventDefault();
-        // Here you can add your form submission logic (e.g., send data to the server)
-        document.getElementById("catalogLink").style.display = "block";
-        document.getElementById("catalogLink").href = "path/to/your/catalogue.pdf"; // Replace with your catalogue link
-        alert("Thank you! Please click the link to download your catalogue.");
-      }
-    </script>
+    
 
 
 
