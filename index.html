@@ -78,7 +78,7 @@
     </div>
   </header>
 
-  <section data-w-id="d8697caa-0773-a1a3-c023-1643f7e60624" class="section relative-overflow-hidden curved-bottom">
+  <!-- <section data-w-id="d8697caa-0773-a1a3-c023-1643f7e60624" class="section relative-overflow-hidden curved-bottom">
     <div class="w-layout-blockcontainer container padding-144px relative no-max-width w-container">
       <img src="images/slide 2.JPG" alt="Description of your image" class="hero-image">
       <div class="space-112px"></div>
@@ -91,11 +91,42 @@
       <div class="space-112px hide-on-tab"></div>
       <div data-w-id="d8697caa-0773-a1a3-c023-1643f7e60635" class="trigger"></div>
     </div>
-  </section>
+  </section> -->
+
+<section>
+<div class="slideshow-container">
+
+<!-- Slide 1 -->
+<div class="slides fade">
+    <img src="images/slide 1.JPG" alt="Description of slide 1" class="slide-image">
+    
+</div>
+
+<!-- Slide 2 -->
+<div class="slides fade">
+    <img src="images/slide 2.JPG" alt="Description of slide 2" class="slide-image">
+    
+</div>
+
+<!-- Slide 3 -->
+<div class="slides fade">
+    <img src="images/slide 1.JPG" alt="Description of slide 3" class="slide-image">
+    
+</div>
+<!-- Slide 4 -->
+<div class="slides fade">
+  <img src="images/slide 2.JPG" alt="Description of slide 4" class="slide-image">
+  
+</div>
+
+<!-- Navigation Buttons -->
+<a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+<a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
 
 
- 
 
+</section>
 
 
   <section class="section">
@@ -1024,6 +1055,30 @@
   type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
   crossorigin="anonymous"></script>
 <script src="js/webflow.js" type="text/javascript"></script>
+
+
+
+<script>
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("slides");
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      slides[slideIndex-1].style.display = "block";  
+      setTimeout(showSlides, 3000); // Change image every 2 seconds
+  }
+  
+  function changeSlide(n) {
+      slideIndex += n - 1;
+      showSlides();
+  }
+  </script>
   
 </body>
 
