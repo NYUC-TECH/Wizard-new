@@ -8,7 +8,7 @@ const port = 3000;
 app.use(bodyParser.json());
 
 // Serve static files from the 'public' directory
-app.use(express.static('../newsite'));
+app.use(express.static('/public'));
 
 // Email sending configuration
 const transporter = nodemailer.createTransport({
