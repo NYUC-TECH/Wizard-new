@@ -98,8 +98,7 @@
       <div class="space-64px"></div>
       <div class="contact-wrapper slide-up-with-hero">
         <div class="form-wrapper w-form">
-          <form id="email-form" name="email-form" data-name="Email Form" method="get"
-            data-wf-page-id="667d31538bfee2a62b8089a8" data-wf-element-id="ca5f6abd-a1c6-6fd5-2f00-0a82abcf2e6d">
+          <form id="contactform">
 
 
             <div class="field-wrapper"><label for="name" class="font-black">Name</label>
@@ -276,6 +275,35 @@
       }
     }
   </script>
+
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', async function(event) {
+      event.preventDefault();
+      
+      const formData = new FormData(event.target);
+      const data = {};
+      formData.forEach((value, key) => {
+          data[key] = value;
+      });
+      
+      const response = await fetch('/contact', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+      });
+      
+      if (response.ok) {
+          alert('Message sent!');
+      } else {
+          alert('Failed to send message.');
+      }
+  });
+</script>
+
+
 </body>
 
 </html>
