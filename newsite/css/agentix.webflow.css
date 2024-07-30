@@ -6262,7 +6262,7 @@ margin-left: auto;
 .img-slider {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 700px;
 }
 .img-slider .slider-container {
   position: absolute;
@@ -6275,7 +6275,7 @@ margin-left: auto;
 .img-slider .slider-container .slide {
   position: relative;
   width: 20%;
-  height: 500px;
+  height: 700px;
   float: left;
   overflow: hidden
 }
